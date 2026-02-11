@@ -1,0 +1,73 @@
+.game {
+  padding: 2.5rem
+}
+
+.hold {
+  display: block;
+  min-height: 100px; 
+  border: .25rem solid #888;
+  border-radius: .25rem;
+  margin: 15px 0;
+  padding: .75rem
+}
+
+.yacht-table {
+  display: block;
+  min-height: 450px;
+  min-width: 100%;
+  background-color: #12cb5e;
+  border: .25rem solid #888;
+  border-radius: .25rem;
+  padding: 1rem
+}
+
+.die {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 1em;
+  margin: 0 1em 0
+}
+
+.playingCard {
+  width: 64px;
+
+  .top {
+    top: 5px;
+    transform: rotate(180deg);
+  }
+
+  .bottom {
+    bottom: 5px;
+  }
+
+  .left {
+    left: -5px;
+  }
+
+  .right {
+    right: -5px;
+  }
+
+  .suit {
+    position: absolute;
+    display: block;
+    width: 20px;
+    font-size: x-small;
+  }
+}
+
+.shake{
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake{
+  0%{
+      transform: rotate(8deg);
+  }
+  50%{
+      transform: rotate(-8deg);
+  }
+  100%{
+      transform: rotate(8deg);
+  }
+}
